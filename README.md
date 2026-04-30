@@ -45,9 +45,11 @@ async def main():
     print("Authorize here:", authorization_url)
 
 asyncio.run(main())
+```
 
-## Contributors✨
+This will generate an authorization URL that you can open in your browser to begin the OAuth flow.
 
+## Contributors ✨
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
