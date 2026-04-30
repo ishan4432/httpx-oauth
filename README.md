@@ -28,6 +28,24 @@
 pip install httpx-oauth
 ```
 
+## Quick Start
+
+Here is a simple example of using HTTPX OAuth with Google:
+
+```python
+import asyncio
+from httpx_oauth.clients.google import GoogleOAuth2
+
+client = GoogleOAuth2("CLIENT_ID", "CLIENT_SECRET")
+
+async def main():
+    authorization_url = await client.get_authorization_url(
+        redirect_uri="http://localhost:8000/callback"
+    )
+    print("Authorize here:", authorization_url)
+
+asyncio.run(main())
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
